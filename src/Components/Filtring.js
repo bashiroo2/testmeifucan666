@@ -23,7 +23,6 @@ export default function Filtring({filter}) {
         <form className="searchform" onChange={submitted} onSubmit={submitted}>
             <h3> Search </h3>
             <input ref={searchRef} className="search" type="text" placeholder="movie name" aria-label=".form-control-lg example" />
-            <button className="btn btn-primary searchbtn" type="submit" >Search</button>
 
             
             <ReactStars count={5}
