@@ -26,9 +26,9 @@ export default function Filtring({filter}) {
             <button className="btn btn-primary searchbtn" type="submit" >Search</button>
 
             
-            <ReactStars count={10}
+            <ReactStars count={5}
                             onChange={ratingChanged}
-                            size={50}
+                            size={30}
                             isHalf={true}
                             activeColor="#ffd700"/>
         </form>

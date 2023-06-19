@@ -6,7 +6,7 @@ export default function AddMovie({adding}) {
 
     let titleRef = useRef();
     let imgurlRef = useRef();
-    let posurlRef = useRef();
+   
     let descRef = useRef();
     let [rate, setRate] = useState(0);
     const ratingChanged = (newRating) => {
@@ -17,10 +17,10 @@ export default function AddMovie({adding}) {
     function submitted(ev){
         ev.preventDefault();
 
-        let movieObject = {title:titleRef.current.value, img:imgurlRef.current.value, description:descRef.current.value, posterURL:posurlRef.current.value, rating:rate};
+        let movieObject = {title:titleRef.current.value, img:imgurlRef.current.value, description:descRef.current.value, rating:rate};
         adding(movieObject);
 
-        //save all this information in localStorage
+        
     }
 
     return (
@@ -43,7 +43,7 @@ export default function AddMovie({adding}) {
 
                 <div className="input-group mb-3">
                     <span className="input-group-text" id="basic-addon3">Your Poter URL </span>
-                    <input ref={posurlRef} type="text" className="form-control" id="basic-url" aria-describedby="basic-addon3" />
+                   
                 </div>
 
                 <div className="input-group">
@@ -53,9 +53,9 @@ export default function AddMovie({adding}) {
 
                 <div className="rating">
                 <h6> Rating :  </h6>
-                <ReactStars count={10}
+                <ReactStars count={5}
                             onChange={ratingChanged}
-                            size={50}
+                            size={30}
                             isHalf={true}
                             activeColor="#ffd700"/>
                 </div>
