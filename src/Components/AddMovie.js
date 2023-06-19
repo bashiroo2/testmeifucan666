@@ -41,11 +41,7 @@ export default function AddMovie({adding}) {
                     </div>
                 </div>
 
-                <div className="input-group mb-3">
-                    <span className="input-group-text" id="basic-addon3">Your Poter URL </span>
-                   
-                </div>
-
+    
                 <div className="input-group">
                     <span className="input-group-text">Description</span>
                     <textarea ref={descRef} className="form-control" aria-label="With textarea"></textarea>

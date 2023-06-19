@@ -21,8 +21,8 @@ export default function Filtring({filter}) {
 
     return (
         <form className="searchform" onChange={submitted} onSubmit={submitted}>
-            <h3> FILTER BAR </h3>
-            <input ref={searchRef} className="form-control form-control-lg searchinp" type="text" placeholder="Search for film..." aria-label=".form-control-lg example" />
+            <h3> Search </h3>
+            <input ref={searchRef} className="search" type="text" placeholder="movie name" aria-label=".form-control-lg example" />
             <button className="btn btn-primary searchbtn" type="submit" >Search</button>
 
             

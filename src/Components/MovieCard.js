@@ -4,7 +4,7 @@ export default function MovieCard({ ele }) {
   return (
       <div className="MovieCard">
         <div>
-          <div className="MovieCard">
+          <div className="ppp">
             <img className="img"  src={ele.img}/>
           </div>
           <div>
