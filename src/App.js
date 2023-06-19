@@ -32,11 +32,11 @@ function App(){
   const [rate,setRate] = useState(0);
   const [keyword, setKeyword] = useState("");
 
-  function adding(movie){
-    if( movie.title && movie.img && movie.description && movie.posterURL ) {
-      setList([...list, movie]);
-    }
+ function adding(movie) {
+  if (movie.title && movie.img && movie.description && movie.rating) {
+    setList([...list, movie]);
   }
+}
 
 
   function filter(key, rate){
