@@ -36,7 +36,7 @@ const info = [
  ];
 
 function App(){
-  
+  const [newmovie]=useState({})
   const [list,setList] = useState(info);
   const [filtredList, setFiltredList] = useState(list);
   const [rate,setRate] = useState(0);
@@ -65,10 +65,10 @@ function App(){
     <div className="App">
         <Filtring filter={filter}/>
         <MovieList list={filtredList} />
-        <AddMovie adding={adding} />
+        <AddMovie adding={adding} newmovie={newmovie} />
     </div> }/>
     
-    <Route path='/movie/:title' element={<Details movies={info}/>}/>
+    <Route path='/movie/:title' element={<Details movies={list}/>}/>
     
   </Routes>    );
 }

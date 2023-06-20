@@ -2,7 +2,7 @@ import "./addmovie.css";
 import ReactStars from "react-rating-stars-component";
 import { useRef,useState } from "react";
 
-export default function AddMovie({adding}) {
+export default function AddMovie({adding,newmovie}) {
 
     let titleRef = useRef();
     let imgurlRef = useRef();
@@ -16,11 +16,8 @@ export default function AddMovie({adding}) {
 
     function submitted(ev){
         ev.preventDefault();
-
         let movieObject = {title:titleRef.current.value, img:imgurlRef.current.value, description:descRef.current.value,trailer:traileref.current.value , rating:rate};
         adding(movieObject);
-
-        
     }
 
     return (

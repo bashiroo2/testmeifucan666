@@ -7,7 +7,6 @@ export default function Details({movies}) {
 return (
     <div>
       <h3>Movie name: {x.title}</h3>
-
     </div>
   );
 }
