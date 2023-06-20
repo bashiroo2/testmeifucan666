@@ -1,7 +1,10 @@
 import "./moviecard.css";
+import {Link} from "react-router-dom";
+
 
 export default function MovieCard({ ele }) {
   return (
+  <Link to={`/movie/${ele.title}`} style={{textDecoration:"none"}}>
       <div className="MovieCard">
         <div>
           <div className="ppp">
@@ -14,6 +17,6 @@ export default function MovieCard({ ele }) {
           </div>
         </div>
       </div>
-   
+   </Link>
   );
 }
