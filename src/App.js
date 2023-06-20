@@ -3,13 +3,19 @@ import AddMovie from "./Components/AddMovie";
 import "./App.css";
 import MovieList from './Components/MovieList.js';
 import Filtring from './Components/Filtring.js';
+import { Route,Routes } from "react-router-dom";
+import {Link} from "react-router-dom";
+
+
+
+
 
 const info = [
         {
       title: 'Inception',
       img: 'https://cinedweller.com/wp-content/uploads/2019/12/Inception-teaser-1000.jpg',
       description: 'A skilled thief who steals corporate secrets by infiltrating the subconscious of his targets is offered a chance to regain his old life as payment for a seemingly impossible task: "inception".',
-      rating: 2
+      rating: 4
     },
     {
       title: 'Purple Hearts',
@@ -50,12 +56,15 @@ function App(){
 
 
   return(
+    <Routes>
+      <Route path='/'element={
     <div className="App">
         <Filtring filter={filter}/>
         <MovieList list={filtredList} />
         <AddMovie adding={adding} />
-    </div>
-      );
+    </div> }/>
+    
+  </Routes>    );
 }
 
 export default App;
