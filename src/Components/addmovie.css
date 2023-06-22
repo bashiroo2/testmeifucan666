@@ -1,30 +1,41 @@
+/* Styling for the AddMovie component */
 .AddMovie {
-    max-width: 50%;
-    margin: 70px auto;
-    background-color:#24194F;
-    
-  }
-  .rating {
-    display: flex;
-    align-content: center;
-  }
-  
-  h {
-    margin-right: 20px;
-  }
-  .form-control {
-    resize: none; 
-  }
-  form {
-    display: flex;
-    flex-direction: column;
-align-items: center;  
-text-align: center;}
+  max-width: 50%;
+  margin: 70px auto;
+  background-color: #24194F;
+}
+
+/* Styling for the rating section */
+.rating {
+  display: flex;
+  align-content: center;
+}
+
+/* Margin for heading elements */
+h {
+  margin-right: 20px;
+}
+
+/* Style for form inputs */
+.form-control {
+  resize: none;
+}
+
+/* Styling for the form container */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Styling for the rating container */
 .rating-container {
   display: flex;
   align-items: center;
 }
+
+/* Margin for the rating title */
 .rating-title {
   margin-bottom: 10px;
 }
-   

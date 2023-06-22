@@ -1,3 +1,4 @@
+/* Styling for the MovieCard component */
 .MovieCard {
   background-color: #282c34;
   color: white;
@@ -7,12 +8,15 @@
   justify-content: center;
   margin: 10px;
   margin-top: 0px;
-  }
+}
+
+/* Styling for the movie image */
 .img {
   width: 300px;
- 
 }
-.ppp {
+
+/* Styling for the ppp container */
+.upper {
   display: flex;
   align-items: center;
   justify-content: center;
