@@ -1,18 +1,30 @@
 .AddMovie {
     max-width: 50%;
     margin: 70px auto;
-    background-color:rgba(255, 230, 0, 0.329);
+    background-color:#24194F;
+    
   }
   .rating {
     display: flex;
-    align-items: center;
+    align-content: center;
   }
   
   h {
     margin-right: 20px;
   }
   .form-control {
-    
     resize: none; 
   }
+  form {
+    display: flex;
+    flex-direction: column;
+align-items: center;  
+text-align: center;}
+.rating-container {
+  display: flex;
+  align-items: center;
+}
+.rating-title {
+  margin-bottom: 10px;
+}
    

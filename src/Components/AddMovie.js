@@ -38,10 +38,11 @@ export default function AddMovie({adding,newmovie}) {
                     </div>
                 </div>
 
-    
-                <div className="input-group">
-                    <span className="input-group-text">Description</span>
+    <div className="input-group">
+                    <label className="col-sm-2 col-form-label">Description</label>
+                      <div className="col-sm-10">
                     <textarea ref={descRef} className="form-control" aria-label="With textarea" placeholder=" Movie description" required></textarea>
+                    </div>
                 </div>
                  <div className="row mb-3">
                     <label htmlFor="colFormLabel" className="col-sm-2 col-form-label">trailer</label>
@@ -50,14 +51,16 @@ export default function AddMovie({adding,newmovie}) {
                     </div>
                 </div>
 
-                <div className="rating" required>
-                <h> Rating :  </h>
-                <ReactStars count={5}
-                            onChange={ratingChanged}
-                            size={30}
-                            isHalf={true}
-                            activeColor="#ffd700"/>
-                </div>
+                <div className="rating-container" required>
+      <h3 className="rating-title">Rating:</h3>
+      <ReactStars
+        count={5}
+        onChange={ratingChanged}
+        size={30}
+        isHalf={true}
+        activeColor="#ffd700"
+      />
+    </div>
                 <div className="col-12">
                     <button className="btn btn-primary" type="submit"> ADD </button>
                 </div>
