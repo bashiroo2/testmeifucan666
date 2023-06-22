@@ -6,7 +6,7 @@ The Movie App is a React application that allows you to browse and filter movies
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/movie-app.git
+   git clone https://github.com/bashiroo2/testmeifucan666.git
 Navigate to the project directory:
 
 
